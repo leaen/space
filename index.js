@@ -22,7 +22,7 @@ let spriteWidth = exhaust.width / frames;
 
 backctx = background.getContext("2d");
 const bg = new Image();
-bg.src = "./background.png";
+bg.src = "./background.jpg";
 backctx.drawImage(
 	bg,
 	-100,
@@ -123,7 +123,7 @@ const drawNewBop = (x, y, angle) => {
 			spriteWidth,
 			exhaust.height,
 			x - spriteWidth * scale,
-			y - rocket.height * scale + 10 - exhaust.height * scale,
+			y - rocket.height * scale - 20 - exhaust.height * scale,
 			spriteWidth * scale * 2,
 			exhaust.height * scale * 2
 		);
